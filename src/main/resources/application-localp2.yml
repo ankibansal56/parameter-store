@@ -13,4 +13,5 @@ cloud:
 aws:
         paramstore:
                 prefix: /config
+                name: foo
                 profileSeparator: _
