@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class AwsParameterStoreSpringApplication {
 
     public static void main(String[] args) {
-	    System.setProperty("aws.accessKeyId", "AKIAU2SCVJ4JITPHRCGP");
-  	    System.setProperty("aws.secretKey", "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");
+	    System.setProperty("aws.accessKeyId", "userAccessKey");
+  	    System.setProperty("aws.secretKey", "userSecretKey");
     	    SpringApplication.run(AwsParameterStoreSpringApplication.class, args);
     }
 }
