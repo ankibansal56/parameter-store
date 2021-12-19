@@ -1,0 +1,22 @@
+management:
+        endpoints:
+                web:
+                        exposure:
+                                include: info, health, metrics, env, logger, jmx, shutdown, refresh
+cloud:
+        aws:
+                stack:
+                        auto: false
+                region:
+                        static: us-east-2
+                        auto: false
+aws:
+        paramstore:
+                prefix: /config
+                profileSeparator: _
+
+spring:
+        cloud:
+                config:
+                        import-check:
+                                enabled: false
